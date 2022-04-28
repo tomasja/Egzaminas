@@ -63,3 +63,11 @@ form {
     font-size: 2em;
   }
 }
+
+/* Output*/
+.output {
+  max-width: 80%;
+  margin: 50px auto;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}

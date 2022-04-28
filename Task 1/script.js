@@ -8,3 +8,24 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+// document.querySelector('form').addEventListener('submit', onSubmit);
+
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const inputWeight = document.getElementById('search').value;
+
+	let lbWeight = inputWeight * 2.2046;
+	let gWeight = inputWeight / 0.001;
+	let ozWeight = inputWeight * 35.274;
+
+	console.log(inputWeight);
+
+	document.getElementById(
+		'output'
+	).innerText = `Jūsų svoris svarais (lb): ${lbWeight}
+    Jūsų svoris gramais (g): ${gWeight}
+    Jūsų svoris uncijomis (oz): ${ozWeight}`;
+});
