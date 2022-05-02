@@ -6,3 +6,24 @@ title, director, budget
 Metodas: 
 wasExpensive() - jeigu filmo budget bus didesnę nei 100 000 000 mln USD, tada gražins true, kiru atveju false 
 ------------------------------------------------------------------------------------------------------ */
+
+class Movie {
+	constructor(title, director, budget) {
+		this.title = title;
+		this.director = director;
+		this.budget = budget;
+	}
+	testFn() {
+		console.log(`${this.title} ${this.budget}`);
+	}
+	wasExpensive() {
+		if (this.budget > 10000000) {
+			console.log(true);
+		} else {
+			console.log(false);
+		}
+	}
+}
+
+const randomMovie = new Movie('Titanic', 'James Cameron', 20000000);
+randomMovie.wasExpensive();

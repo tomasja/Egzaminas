@@ -27,3 +27,15 @@
   margin-top: 50px;
   color: #333;
 }
+
+.card {
+  width: 90%;
+  margin: 1.5vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
